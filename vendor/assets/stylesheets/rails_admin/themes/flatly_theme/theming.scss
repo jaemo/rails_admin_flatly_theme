@@ -6,6 +6,13 @@
 // TYPOGRAPHY
 // --------------------------------------------------
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic);
 
 h1 {
@@ -642,7 +649,7 @@ legend {
         background-color: $blueDark;
       }
     }
-    
+
     .nav-collapse ul.nav.pull-right {
       display: table;
       li {
